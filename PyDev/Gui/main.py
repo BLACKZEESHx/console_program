@@ -17,10 +17,10 @@ class PyDev(QMainWindow):
 
     def Response_Genertor(self):
         if self.user_input_lower == "":
-                write_type_animations.write_like_gpt("I'm sorry, I didn't receive a question or request from you. How can I assist you today?")
+                ("I'm sorry, I didn't receive a question or request from you. How can I assist you today?")
 
         elif "bye" in self.user_input_lower and len(self.user_input_lower) <= 20:
-            write_type_animations.write_like_gpt("Goodbye! Don't hesitate to ask if you have any questions in the future.")
+            ("Goodbye! Don't hesitate to ask if you have any questions in the future.")
 
         elif self.user_input == f"./run {self.user_input[6:]}":
             os.system("cls")
@@ -32,28 +32,28 @@ class PyDev(QMainWindow):
 
         elif "time" in self.user_input_lower and len(self.user_input_lower) <= 25:
             if "what" in self.user_input_lower :
-                write_type_animations.write_like_gpt("The current time and date is: ")
-                write_type_animations.write_like_gpt(f"Year: {self.currenttime.year}")
+                ("The current time and date is: ")
+                (f"Year: {self.currenttime.year}")
  
-                write_type_animations.write_like_gpt(f"Month: {self.currenttime.month}")
+                (f"Month: {self.currenttime.month}")
  
-                write_type_animations.write_like_gpt(f"Day: {self.currenttime.day}")
+                (f"Day: {self.currenttime.day}")
  
-                write_type_animations.write_like_gpt(f"Hour: {self.currenttime.hour}")
+                (f"Hour: {self.currenttime.hour}")
  
-                write_type_animations.write_like_gpt(f"Minute: {self.currenttime.minute}")
+                (f"Minute: {self.currenttime.minute}")
  
-                write_type_animations.write_like_gpt(f"Second: {self.currenttime.second}")
+                (f"Second: {self.currenttime.second}")
 
                 if self.currenttime.strftime("%p") == "AM":
-                    write_type_animations.write_like_gpt(f"AM/PM: {self.currenttime.strftime('%p')}")
+                    (f"AM/PM: {self.currenttime.strftime('%p')}")
 
                 elif self.currenttime.strftime("%p") == "PM":
-                    write_type_animations.write_like_gpt(f"PM/AM: {self.currenttime.strftime('%p')}")
+                    (f"PM/AM: {self.currenttime.strftime('%p')}")
 
-                write_type_animations.write_like_gpt("over all time and date is: ")
+                ("over all time and date is: ")
 
-                write_type_animations.write_like_gpt(str(self.currenttime) +" "+ str(self.currenttime.strftime("%p")), "")
+                (str(self.currenttime) +" "+ str(self.currenttime.strftime("%p")), "")
             
 while True:
     try:
